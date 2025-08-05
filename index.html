@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -14,17 +17,17 @@
         <div class="left-nav flex">
             <ul class=" flex gap">
                 <li>
-                    <img class="invert" src="./assets/logo.svg" alt="Logo" class="logo" />
+                    <img class="invert logo" src="./assets/logo.svg" alt="Logo" class="logo" />
                 </li>
 
                 <li>
-                    <img class=" icon invert"  src="./assets/home.svg" alt="Home">
+                    <img class=" icon invert  home" src="./assets/home.svg" alt="Home">
                 </li>
 
                 <div class="search-bar">
-                    <img class=" icon  invert" src="./assets/search.svg" alt="Search" />
+                    <img class=" icon  invert search" src="./assets/search.svg" alt="Search" />
                     <input class="search-input" type="text" placeholder="What do  you want to play ?" />
-                    <img class="icon invert" src="./assets/bag.svg" alt="Notification" />
+                    <img class="icon bag invert" src="./assets/bag.svg" alt="Notification" />
                 </div>
 
             </ul>
@@ -42,13 +45,33 @@
                 </li>
 
                 <li><button class="btn">Sign Up</button></li>
-                <li><button class="btn">Log in</button></li>
+                <li><button class="btn log-in">Log in</button></li>
             </ul>
         </div>
     </div>
     <div class="container flex">
-        <div class="left border"></div>
+        <div class="left border">
+            <div class="top-left-content">
+                <h3> Your Library</h3>
+                <i class="fa-regular fa-plus fa-2xl" style="color: #edeff3;"></i>
+            </div>
+            <div class="middle-left-content">
+                <div class="middle-left-content-one"></div>
+                <div class="middle-left-content-two"></div>
+            </div>
+            <div class="bottom-left-content"></div>
+        </div>
         <div class="right border"></div>
+    </div>
+    <div class="footer">
+        <div class="left-footer">
+            <h3>Preview of Spotify</h3>
+            <h5>Sign up to get ultimate songs and podcasts with occasional ads. No credit card needed.</h5>
+        </div>
+        <div class="right-footer">
+            <button class="sign-in">Sign Up For Free</button>
+
+        </div>
     </div>
 </body>
 
