@@ -1,33 +1,31 @@
 .border {
-    
-    margin: 3px;
+  margin: 3px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .item-center {
-    align-items: center;
+  align-items: center;
 }
-.invert{
-    filter: invert(1);
+.invert {
+  filter: invert(1);
 }
-.bg-black{
-    background-color: black;
-    color: white;
+.bg-black {
+  background-color: black;
+  color: white;
 }
-.bg-gray{
- background-color: #2A2A2A;  
- color:white;
- border-radius: 50%; 
-}
-
-.gap{
-    gap:15px
+.bg-gray {
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 50%;
 }
 
+.gap {
+  gap: 15px;
+}
