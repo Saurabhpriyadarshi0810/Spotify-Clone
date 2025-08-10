@@ -381,10 +381,10 @@ body {
 }
 
 .trending-songs-card-container {
-  margin: 10px;
+  margin: 10px 10px 10px 30px;
   padding: 5px 5px 5px 20px;
   height: 18.5rem;
-  width: 98%;
+  width: 97%;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
