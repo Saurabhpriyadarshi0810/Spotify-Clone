@@ -20,12 +20,24 @@
   background-color: black;
   color: white;
 }
-.bg-gray {
-  background-color: #2a2a2a;
-  color: white;
-  border-radius: 50%;
-}
 
 .gap {
   gap: 15px;
+}
+
+.svg-nav {
+  height: 5rem;
+  width: 3rem;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+}
+
+.icon {
+  width: 24px;
+}
+
+flex-center{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
 }

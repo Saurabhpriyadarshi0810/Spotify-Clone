@@ -17,17 +17,21 @@
         <div class="left-nav flex">
             <ul class="flex gap">
                 <li>
-                    <img class="invert logo" src="./assets/logo.svg" alt="Logo" class="logo" />
+                    <div class="logo-icon">
+                        <img class="logo" src="./assets/logo.svg" alt="Logo" class="logo" />
+                    </div>
                 </li>
 
                 <li>
-                    <img class="icon invert home" src="./assets/home.svg" alt="Home" />
+                    <div class="home-icon"><img class="icon home" src="./assets/home.svg" alt="Home" /></div>
                 </li>
 
                 <div class="search-bar">
-                    <img class="icon invert search" src="./assets/search.svg" alt="Search" />
-                    <input class="search-input" type="text" placeholder="What do  you want to play ?" />
-                    <img class="icon bag invert" src="./assets/bag.svg" alt="Notification" />
+                    <div class="search-icon"><img class="icon search" src="./assets/search.svg" alt="Search" /></div>
+                    <input  id="input" class="search-input" type="text" placeholder="What do  you want to play ?" />
+
+                    <div class="bag-icon" id="bag"><img class="icon bag" src="./assets/bag.svg" alt="Notification" /></div>
+
                 </div>
             </ul>
         </div>
@@ -38,7 +42,7 @@
                 <li><button class="btn">Download</button></li>
                 <li>
                     <div class="download-div-nav">
-                        <img class="download-svg invert icon" src="./assets/download.svg" alt="Download" />
+                        <img class="download-svg" id="download-icon"  src="./assets/download.svg" alt="Download" />
                         <button class="btn">Install App</button>
                     </div>
                 </li>
@@ -48,7 +52,7 @@
             </ul>
         </div>
     </div>
-    <div class="container ">
+    <div class="container">
         <div class="left border">
             <div class="top-left-content">
                 <h3>Your Library</h3>
@@ -68,18 +72,57 @@
             </div>
             <div class="bottom-left-content">
                 <div class="bottom-left-content-span-div">
-                    <div><span>Legal</span></div>
-                    <div><span>Safety & Privacy Center</span></div>
-                    <div><span>Privacy Policy</span></div>
-                    <div><span>Cookies</span></div>
-                    <div><span>About Ads</span></div>
-                    <div><span>Accessibility</span></div>
+                    <ul>
+                        <li><span>Legal</span></li>
+                        <li><span>Safety & Privacy Center</span></li>
+                        <li><span>Privacy Policy</span></li>
+                        <li><span>Cookies</span></li>
+                        <li><span>About Ads</span></li>
+                        <li><span>Accessibility</span></li>
+                    </ul>
+
+                    <div class="Cookies"><span>Cookies</span></div>
+                    <div class="english-btn">
+                        <button>
+                            <pre><i class="fa-solid fa-earth-americas"></i>  English</pre>
+                        </button>
+                    </div>
                 </div>
-                <div class="Cookies"><span>Cookies</span></div>
-                <div class="english-btn"><button><pre><i class="fa-solid fa-earth-americas"></i>  English</pre></button></div>
+
             </div>
         </div>
-        <div class="right border"></div>
+        <div class="right border">
+
+                <div class="trending-songs">
+                    <h1><a href="#">Trending Songs</a></h1>
+                    <h5><a href="#">Show All</a></h5>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
     </div>
     <div class="footer">
         <div class="left-footer">

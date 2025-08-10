@@ -1,23 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,700;1,700&display=swap");
+
+/* universal property */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
   background-color: #000000;
 }
 
-.container {
-  display: flex;
-}
+/* navigation Bar */
 .nav {
   width: 100%;
   justify-content: space-between;
   height: 70px;
   cursor: pointer;
-}
+} 
 
+/* left part of nav */
 .left-nav {
   justify-content: space-between;
   padding-left: 4rem;
@@ -34,9 +40,97 @@ body {
   justify-content: space-around;
 }
 
-.icon {
-  width: 24px;
+/* sportify logo */
+
+.logo-icon {
+  margin: auto;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
 }
+.logo {
+  padding-top: 5px;
+}
+
+.logo-icon img {
+  height: 50px;
+}
+
+/* home icon in nav */
+
+.home-icon {
+  margin: auto;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.home {
+  margin-top: 7px;
+}
+
+/* search bar of nav*/
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #2b2b2b;
+  border-radius: 1rem;
+}
+
+.search-bar div {
+  height: 1.5rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 450px;
+  height: 2.5rem;
+  background-color: #2b2b2b;
+  outline: none;
+  border: none;
+}
+
+.search-bar input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #a6b3b3;
+}
+
+.search {
+  margin-top: 2px;
+}
+
+.search-icon {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* bag icon of nav */
+
+.bag-icon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#bag {
+  border-left: 1px solid white;
+}
+
+
+/* right part of nav bar */
 
 .right-nav {
   height: 70px;
@@ -53,44 +147,20 @@ body {
   padding-right: 20px;
 }
 
+/* download icon and download button */
+
 .download-div-nav {
+  justify-content: center;
+  width: 8rem;
   display: flex;
   gap: 8px;
+  border-left: 1px solid white;
 }
 
-.search-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
+#download-icon {
+  width: 15px;
 }
-
-.search-bar input {
-  width: 450px;
-  height: 2.5rem;
-  background-color: #2b2b2b;
-  outline: none;
-  border-radius: 0.5rem;
-  border: none;
-}
-
-.search-bar input::placeholder {
-  padding-left: 10px;
-  font-size: 18px;
-  color: #a6b3b3;
-}
-
-.search {
-  margin-top: 2px;
-}
-
-.home {
-  margin-top: 7px;
-}
-
-.logo {
-  padding-top: 5px;
-}
+  /* common property on all button of nav bar */
 
 .btn {
   background-color: black;
@@ -101,6 +171,8 @@ body {
   cursor: pointer;
 }
 
+/* login button of nav bar */
+
 .log-in {
   background-color: white;
   color: black;
@@ -109,21 +181,24 @@ body {
   border-radius: 5rem;
 }
 
-.left {
-  width: 25%;
-  height: 80vh;
-  background-color: #121212;
-  border-radius: 1rem;
+/* main content of the web page */
+
+.container {
+  display: flex;
 }
 
-.right {
-  width: 75%;
+/* left part of the main content */
+
+.left {
+  width: 30%;
   height: 80vh;
-  overflow: auto;
   background-color: #121212;
   border-radius: 1rem;
-  color: white;
 }
+ 
+/* the left part is further divided in 3 part */
+
+/* this is the first part */
 
 .top-left-content {
   color: white;
@@ -133,13 +208,14 @@ body {
   align-items: center;
   border-radius: 0.5rem;
   font-weight: bolder;
-  /* height: 10rem;
-    line-height: 5rem; */
+
 }
 
 .top-left-content h3 {
   font-size: 20px;
 }
+
+/* middle part of the left part of the left conntent */
 
 .middle-left-content {
   height: 300px;
@@ -209,20 +285,22 @@ body {
   cursor: pointer;
 }
 
+/* bottom part of left content */
+
 .bottom-left-content-span-div {
-  padding-top: 35px;
-  padding-left: 10px;
-  gap: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 30px;
-  margin-right: 50px;
+  margin: 25px;
 }
 
-.bottom-left-content-span-div div {
-  /* padding: 10px; */
+.bottom-left-content-span-div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bottom-left-content-span-div ul li {
+  font-size: 10px;
   color: #b3b3b3;
 }
 
@@ -232,29 +310,44 @@ body {
 }
 
 .Cookies {
-  margin: 20px 0 10px 35px;
-}
-.Cookies span {
-  color: white;
+  margin: 20px 0 10px 0px;
 }
 
+.Cookies span {
+  font-size: 15px;
+  color: #c9c8c8;
+  font-weight: 200;
+}
 
 .english-btn button {
   background: #121212;
   color: #ffffff;
-  width: 10rem;
+  width: 6rem;
   height: 2rem;
   border: 1px solid #b3b3b3;
   font-weight: bold;
   border-radius: 5rem;
-  margin-left: 2rem;
+
   margin-top: 2rem;
 }
 
+/* right part of the main content */
+
+.right {
+  width: 70%;
+  height: 80vh;
+  overflow: auto;
+  background-color: #121212;
+  border-radius: 1rem;
+  color: white;
+}
+
+/* footer  of the main content */
+
 .footer {
-  margin-top: 5px;
-  height: 65px;
-  width: 100%;
+  margin: 2px auto;
+  height: 63px;
+  width: 99%;
   background: linear-gradient(to right, #b32e9c, #6e58d3, #5290f5);
   cursor: pointer;
   display: flex;
@@ -265,7 +358,7 @@ body {
 .left-footer {
   color: white;
 }
-
+/* sign in button of footer */
 .sign-in {
   background-color: white;
   color: black;
