@@ -7,7 +7,7 @@
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight:200;
   font-style: normal;
 }
 
@@ -221,6 +221,7 @@ body {
 }
 
 .middle-left-content:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
 }
 
@@ -314,14 +315,59 @@ body {
   border-radius: 1rem;
   color: white;
   background: linear-gradient(to bottom, #202020, #121212);
+  position: relative;
 }
 
+.right::-webkit-scrollbar {
+  position: static;
+  width: 20px;
+  background: transparent;
+}
+
+.right:hover::-webkit-scrollbar {
+  width: 20px;
+}
+.right:hover::-webkit-scrollbar-thumb {
+  background-color: #5b5959;
+  width: 20px;
+  border-radius: 5rem;
+  margin: auto;
+}
 .trending-songs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin: 5px;
+}
+.img {
+  position: relative;
+  height: 170px;
+}
+
+.playbutton {
+  height: 50px;
+  width: 50px;
+  background-color: #3ae176;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.Artist-card:hover .playbutton {
+  z-index: 1;
+  transition: translateY(20px) 0.3s linear 0.3s;
+}
+
+.card:hover .playbutton {
+  z-index: 1;
+  transition: translateY(20px) 0.3s linear 0.3s;
 }
 
 .trending-songs a,
@@ -352,14 +398,14 @@ body {
 .card {
   height: 18rem;
   width: 12rem;
-  padding: 15px;
+  padding: 10px;
   font-size: 15px;
   border-radius: 0.5rem;
 }
 
 .card:hover,
 .Artist-card:hover {
-  background-color: #707070;
+  background-color: #272626;
 }
 
 .card img {
@@ -377,6 +423,7 @@ body {
   font-size: 15px;
   word-wrap: break-word;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .card p,
@@ -384,6 +431,7 @@ body {
   font-size: 10px;
   color: #b3b3b3;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .Popular-Artist-card-Container {
@@ -408,10 +456,88 @@ body {
   height: 160px;
 }
 
-.padding{
+.padding {
   padding: 10px 0 0 10px;
 }
 
+/*top footer of main content */
+
+.footer-main-content {
+  width: 95%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding-top:50px;
+  border-top: 1px solid #414141 ;
+}
+
+.footer-list {
+  height: 20vh;
+}
+
+.footer-main-content div ul li {
+  list-style: none;
+  padding-top: 15px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.footer-main-content div ul li:first-child a{
+  color:white;
+}
+
+.footer-main-content div ul li a{
+  color:#878787;
+  text-decoration: none;
+}
+
+.footer-main-content div ul li a:hover{
+  text-decoration: underline;
+}
+
+.footer-main-content div ul li:first-child {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.socal-media-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.socal-media{
+  height: 50px;
+  width: 50px;
+  background-color: #2B2B2B;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+/* bottom of main content */
+
+ .bottom-main-content-container{
+  height: 18vh;
+  width: 95%;
+  margin: auto;
+  border-top: 1px solid  #414141;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.bottom-main-content{
+  color:#B3B3B3;
+}
 
 /* footer  of the main content */
 
