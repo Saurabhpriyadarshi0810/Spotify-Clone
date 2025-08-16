@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" sizes="32x32" type="image/png"
+        href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="nav flex bg-black">
+    <nav>
         <div class="left-nav flex">
             <ul class="flex gap">
                 <li>
@@ -39,7 +43,6 @@
                         </div>
                     </div>
                 </li>
-
             </ul>
         </div>
         <div class="right-nav">
@@ -58,214 +61,60 @@
                 <li><button class="btn log-in">Log in</button></li>
             </ul>
         </div>
-    </div>
-    <div class="container">
+    </nav>
+    <main>
         <div class="left border">
             <div class="top-left-content">
                 <h3>Your Library</h3>
                 <i class="fa-regular fa-plus fa-xl"></i>
             </div>
-            <div class="middle-left-content">
-                <div class="middle-left-content-one">
-                    <h3>Create Your First Playlist</h3>
-                    <h5>It's easy, we'll help you</h5>
-                    <button class="sign-in">Create Playlist</button>
-                </div>
-                <div class="middle-left-content-two">
-                    <h3>Let's find some podcasts to follow</h3>
-                    <h5>We'll keep you updated on new episodes</h5>
-                    <button class="sign-in">Browse podcasts</button>
-                </div>
-            </div>
-            <div class="bottom-left-content">
-                <div class="bottom-left-content-span-div">
-                    <ul>
-                        <li><span>Legal</span></li>
-                        <li><span>Safety & Privacy Center</span></li>
-                        <li><span>Privacy Policy</span></li>
-                        <li><span>Cookies</span></li>
-                        <li><span>About Ads</span></li>
-                        <li><span>Accessibility</span></li>
-                    </ul>
+            <div class="song-list">
+                <ul>
 
-                    <div class="Cookies"><span>Cookies</span></div>
-                    <div class="english-btn">
-                        <button>
-                            <pre><i class="fa-solid fa-earth-americas"></i>  English</pre>
-                        </button>
-                    </div>
-                </div>
+                </ul>
             </div>
         </div>
-        <div class="right border">
-            <div class="first-section">
-                <div class="trending-songs">
-                    <h2><a href="#">Trending Songs</a></h2>
-                    <h5><a href="#">Show All</a></h5>
-                </div>
-                <div class="trending-songs-card-container">
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
+        </div>
 
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
+
+        <!-- main content -->
+
+        <div class="right-main border">
+
+
+            <!-- first div -->
+
+            <div class="right">
+                <div class="first-div">
+                    <div class="trending-songs">
+                        <h2><a href="#">Trending Songs</a></h2>
+                        <h5><a href="#">Show All</a></h5>
                     </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
+                    <div class="trending-songs-card-container">
 
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
+                        <!-- card 1 -->
 
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
+                                    alt="song-logo" />
+                                <button>
+                                    <div class="playbutton">
+                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
+                                    </div>
+                                </button>
+                            </div>
 
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
+                            <h3>Pardesiya - From "Param Sundari</h3>
+                            <p>
+                                Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
+                            </p>
                         </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
                     </div>
                 </div>
-                <div class="second-section">
+
+                <!-- div-two -->
+                <div class="second-div">
                     <div class="trending-songs">
                         <h2><a href="#">Popular-Artists</a></h2>
                         <h5><a href="#">Show All</a></h5>
@@ -273,97 +122,9 @@
 
 
                     <div class="trending-songs-card-container">
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
-                        <div class="Artist-card">
-                            <div class="img">
-                                <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
-                                    alt="artist-logo" />
-                                <button>
-                                    <div class="playbutton">
-                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                    </div>
-                                </button>
-                            </div>
-                            <h3>Pritam</h3>
-                            <h5>Artist</h5>
-                        </div>
+
+                        <!-- card-1 -->
+
                         <div class="Artist-card">
                             <div class="img">
                                 <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
@@ -379,200 +140,143 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+                <!-- third-div -->
+
+                <div class="third-div padding">
+
+                    <!-- title of this div -->
+
+                    <div class="trending-songs">
+                        <h2><a href="#">Popular artist and singles</a></h2>
+                        <h5><a href="#">Show All</a></h5>
+                    </div>
+
+
+                    <div class="trending-songs-card-container">
+
+                        <!-- card 1 -->
+
+                        <div class="card">
+                            <div class="img">
+                                <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
+                                    alt="song-logo" />
+                                <button>
+                                    <div class="playbutton">
+                                        <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <h3>Pardesiya - From "Param Sundari</h3>
+                            <p>
+                                Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- footer of main content -->
+
+
+                <div class="footer-main-content">
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">For the Record</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">Communities</a></li>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Vendors</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">Useful links</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                            <li><a href="#">Popular by Country</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#"> Plans</a></li>
+                            <li><a href="#">Premium Individual</a></li>
+                            <li><a href="#">Premium Duo</a></li>
+                            <li><a href="#">Premium Family</a></li>
+                            <li><a href="#">Premium Student</a></li>
+                            <li><a href="#">Spotify Free</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- social media links  -->
+
+                    <div class="social-media-conatiner">
+                        <div class="social-media">
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #ededee"></i>
+                        </div>
+                        <div class="social-media">
+                            <i class="fa-brands fa-twitter fa-xl" style="color: #f3f4f7"></i>
+                        </div>
+                        <div class="social-media">
+                            <i class="fa-brands fa-facebook fa-xl" style="color: #f0f2f5"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COPYRIGHT div OF THE MAIN CONTENT -->
+
+
+                <div class="bottom-main-content-container">
+                    <div class="bottom-main-content">
+                        <p>© 2025 Spotify AB</p>
+                    </div>
+                </div>
+
+
+
+
             </div>
+            <div class="playbar">
+                <div class="div">
+                    <div class="song-info"></div>
 
-            <div class="third-section padding">
-                <div class="trending-songs">
-                    <h2><a href="#">Popular artist and singles</a></h2>
-                    <h5><a href="#">Show All</a></h5>
+
+                    <div class="player-button">
+                        <img src="./assets/previous.svg" alt="previous">
+                        <i class="fa-solid fa-play fa-xl"></i>
+                        <img src="./assets/next.svg" alt="previous">
+                    </div>
+
+
+                    <div class="song-time"></div>
                 </div>
-                <div class="trending-songs-card-container">
 
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                    <div class="card">
-                        <div class="img">
-                            <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
-                                alt="song-logo" />
-                            <button>
-                                <div class="playbutton">
-                                    <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
-                                </div>
-                            </button>
-                        </div>
-
-                        <h3>Pardesiya - From "Param Sundari</h3>
-                        <p>
-                            Sachin-Jigar,Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya
-                        </p>
-                    </div>
-                </div>
+                <div class="circle"></div>
+                <div class="seekbar"></div>
             </div>
 
 
 
-            <div class="footer-main-content">
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">For the Record</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="#">Communities</a></li>
-                        <li><a href="#">For Artists</a></li>
-                        <li><a href="#">Developers</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">Vendors</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="#">Useful links</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Free Mobile App</a></li>
-                        <li><a href="#">Popular by Country</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-list">
-                    <ul>
-                        <li><a href="#"> Plans</a></li>
-                        <li><a href="#">Premium Individual</a></li>
-                        <li><a href="#">Premium Duo</a></li>
-                        <li><a href="#">Premium Family</a></li>
-                        <li><a href="#">Premium Student</a></li>
-                        <li><a href="#">Spotify Free</a></li>
-                    </ul>
-                </div>
-                <div class="socal-media-conatiner">
-                    <div class="socal-media"><i class="fa-brands fa-instagram fa-xl" style="color: #ededee;"></i></div>
-                    <div class="socal-media"><i class="fa-brands fa-twitter fa-xl" style="color: #f3f4f7;"></i></div>
-                    <div class="socal-media"><i class="fa-brands fa-facebook fa-xl" style="color: #f0f2f5;"></i></div>
-                </div>
-
-            </div>
-            <div class="bottom-main-content-container">
-                <div class="bottom-main-content">
-                    <p>© 2025 Spotify AB</p>
-                </div>
-            </div>
         </div>
-    </div>
+    </main>
+    <!-- FOOTER OF THE WEP PAGE  -->
+
+
     <div class="footer">
         <div class="left-footer">
             <h3>Preview of Spotify</h3>
@@ -585,7 +289,7 @@
             <button class="sign-in">Sign Up For Free</button>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
