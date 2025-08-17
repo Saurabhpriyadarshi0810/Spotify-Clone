@@ -128,11 +128,7 @@ async function main() {
             play.src = "./assets/play.svg"
         }
     })
-    previous.addEventListener("click", () => {
-        if (index > 0) {
-            playmusic(songs[index - 1]);
-        }
-    })
+   
 
 
     // time upadte of the song 
