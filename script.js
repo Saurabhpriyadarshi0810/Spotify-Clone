@@ -4,6 +4,10 @@ let previous = document.querySelector("#previous");
 let next = document.querySelector("#next");
 
 
+
+
+
+
 function formatTime(seconds) {
     if (isNaN(seconds)) return "00:00"; // handle NaN case
     let minutes = Math.floor(seconds / 60);
@@ -52,7 +56,7 @@ async function getsongs() {
 const playmusic = (track, pause = false) => {
 
 
-    currentsong.src = "/songs/" + encodeURI(track);
+    currentsong.src = "/songs/" + `${encodeURI(track)}`;
     if (!pause) {
         currentsong.play();
         play.src = "./assets/pause.svg"
@@ -85,7 +89,7 @@ async function main() {
             ` <li>
                     <div class="music-logo">
                     <i class="fa-solid fa-music fa-xl" style="color: #f1f2f3;"></i>
-                    <h5>${song.replaceAll("%20", " ")}</h5>
+                    <h5>${decodeURIComponent(song)}</h5>
                     </div>
                     <div class="playnow">
                         <h5>Play Now</h5>
@@ -98,7 +102,7 @@ async function main() {
     //adding intial music 
 
 
-    playmusic(songs[0], true)
+    playmusic(songs[7], true)
 
     // Adding event listener to each song 
 
@@ -125,7 +129,9 @@ async function main() {
         }
     })
     previous.addEventListener("click", () => {
-        playmusic(songs[-1]);
+        if (index > 0) {
+            playmusic(songs[index - 1]);
+        }
     })
 
 
@@ -134,8 +140,28 @@ async function main() {
     currentsong.addEventListener("timeupdate", () => {
         console.log(currentsong.currentTime, currentsong.duration)
         document.querySelector(".song-time").innerHTML = `${formatTime(currentsong.currentTime)}/${formatTime(currentsong.duration)}`;
-        document.querySelector(".circle").style.left=( 4 +((currentsong.currentTime/currentsong.duration)*100 )*.9+"%");
+        document.querySelector(".circle").style.left = (4 + ((currentsong.currentTime / currentsong.duration) * 100) * .9 + "%");
     })
+
+    // working of  seek bar 
+
+    document.querySelector(".seekbar").addEventListener("click", (e) => {
+        let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
+        document.querySelector(".circle").style.left = percent + "%";
+        currentsong.currentTime = ((currentsong.duration) * percent) / 100;
+
+    })
+
+    // adding hamburger
+
+    document.querySelector("#hamburger").addEventListener("click",()=>{
+        document.querySelector(".left").style.left="0%"
+    })
+
+    document.querySelector("#cut").addEventListener("click",()=>{
+        document.querySelector(".left").style.left="-100%"
+    })
+
 
 
 }

@@ -9,10 +9,8 @@
         href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous"> -->
 
 </head>
 
@@ -45,9 +43,11 @@
                 </li>
             </ul>
         </div>
+
         <div class="right-nav">
             <ul class="flex-center">
-                <li><button class="btn">Premium</button></li>
+                <li><i id="hamburger" class="fa-solid fa-bars fa-xl" style="color: #ebeef5;"></i></li>
+                <!-- <li><button class="btn">Premium</button></li> -->
                 <li><button class="btn">Support</button></li>
                 <li><button class="btn">Download</button></li>
                 <li>
@@ -66,7 +66,7 @@
         <div class="left border">
             <div class="top-left-content">
                 <h3>Your Library</h3>
-                <i class="fa-regular fa-plus fa-xl"></i>
+                <i id="cut" class="fa-solid fa-xmark fa-xl" style="color: #f7f9fd;"></i>
             </div>
             <div class="song-list">
                 <ul>
@@ -74,7 +74,7 @@
                 </ul>
             </div>
         </div>
-        </div>
+
 
 
         <!-- main content -->
@@ -166,6 +166,7 @@
                                     alt="song-logo" />
                                 <button>
                                     <div class="playbutton">
+
                                         <i class="fa-solid fa-play fa-xl" style="color: #000000"></i>
                                     </div>
                                 </button>
@@ -257,15 +258,15 @@
 
 
                     <div class="player-button">
-                        <img id="previous"  src="./assets/previous.svg" alt="previous">
-                        <img id="play"  src="./assets/play.svg" alt="play">
+                        <img id="previous" src="./assets/previous.svg" alt="previous">
+                        <img id="play" src="./assets/play.svg" alt="play">
                         <!-- <i  id="play" class="fa-solid fa-play fa-xl"></i> -->
                         <img id="next" src="./assets/next.svg" alt="previous">
                     </div>
 
                     <div class="song-time"></div>
 
-                    
+
                 </div>
 
                 <div class="circle"></div>
