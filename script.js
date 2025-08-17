@@ -4,7 +4,7 @@ console.log("started writing js for this web page ")
 
 // function of getting  list of songs 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:5500/songs/")
+    let a = await fetch("http://127.0.0.1:5501/songs/")
 
     let response = await a.text();
 
