@@ -1,4 +1,21 @@
 console.log("started writing js for this web page ")
+let play = document.querySelector("#play");
+let previous = document.querySelector("#previous");
+let next = document.querySelector("#next");
+
+
+function formatTime(seconds) {
+    if (isNaN(seconds)) return "00:00"; // handle NaN case
+    let minutes = Math.floor(seconds / 60);
+    let secs = Math.floor(seconds % 60);
+
+    // Add leading zero if less than 10
+    if (secs < 10) secs = "0" + secs;
+    if (minutes < 10) minutes = "0" + minutes;
+
+    return `${minutes}:${secs}`;
+}
+
 
 
 
@@ -14,8 +31,7 @@ async function getsongs() {
 
     div.innerHTML = response;
 
-    let as = div.getElementsByTagName
-        ("a")
+    let as = div.getElementsByTagName("a")
     // console.log(as);
 
     let songs = [];
@@ -33,21 +49,29 @@ async function getsongs() {
     return (songs)
 }
 
-const playmusic = (track)=>{
-    // let audio = new Audio("/songs/" + track.trim());
-    // audio.play()
+const playmusic = (track, pause = false) => {
 
-    currentsong.src = "/songs/" + track;
-    currentsong.play();
+
+    currentsong.src = "/songs/" + encodeURI(track);
+    if (!pause) {
+        currentsong.play();
+        play.src = "./assets/pause.svg"
+
+    }
+
+    document.querySelector(".song-info").innerHTML = track;
+    document.querySelector(".song-time").innerHTML = "00:00 / 00:00";
 }
 
-    let currentsong = new Audio();
+let currentsong = new Audio();
 
 
 async function main() {
 
 
-    // sonngs list 
+
+
+    // songs list 
 
     let songs = await getsongs();
     console.log(songs)
@@ -71,26 +95,50 @@ async function main() {
 
     }
 
+    //adding intial music 
+
+
+    playmusic(songs[0], true)
+
+    // Adding event listener to each song 
+
+
     Array.from(document.querySelector(".song-list").getElementsByTagName("li")
     ).forEach(e => {
-        e.addEventListener("click",()=> {
+        e.addEventListener("click", () => {
             console.log(e.querySelector(".music-logo h5").innerHTML)
             playmusic(e.querySelector(".music-logo h5").innerHTML)
+        })
     })
-})
 
 
-// playing first audio
+    //adding eventlister to playbar buttons
 
-var audio = new Audio(songs[0]);
-audio.play();
+    play.addEventListener("click", () => {
+        if (currentsong.paused) {
+            currentsong.play();
+            play.src = "./assets/pause.svg"
+        }
+        else {
+            currentsong.pause();
+            play.src = "./assets/play.svg"
+        }
+    })
+    previous.addEventListener("click", () => {
+        playmusic(songs[-1]);
+    })
 
 
-audio.addEventListener("loadeddata", () => {
-    let duration = audio.duration;
-    console.log(duration);
-})
+    // time upadte of the song 
+
+    currentsong.addEventListener("timeupdate", () => {
+        console.log(currentsong.currentTime, currentsong.duration)
+        document.querySelector(".song-time").innerHTML = `${formatTime(currentsong.currentTime)}/${formatTime(currentsong.duration)}`;
+        document.querySelector(".circle").style.left=( 4 +((currentsong.currentTime/currentsong.duration)*100 )*.9+"%");
+    })
+
 
 }
 
 main();
+

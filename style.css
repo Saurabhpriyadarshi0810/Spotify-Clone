@@ -249,126 +249,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* middle part of the left part of the left conntent */
-
-/* .middle-left-content {
-    height: 300px;
-    overflow: auto;
-    scrollbar-width: none;
-}
-
-.middle-left-content::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-.middle-left-content:hover {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
-}
-
-.middle-left-content:hover::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
-}
-
-.middle-left-content-one,
-.middle-left-content-two {
-    height: 150px;
-    width: 100%;
-    background-color: #1f1f1f;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 1rem;
-    color: white;
-    padding: 10px 0 10px 25px;
-}
-
-.middle-left-content-one h3,
-.middle-left-content-one h5,
-.middle-left-content-two h3,
-.middle-left-content-two h5 {
-    font-size: 15px;
-    padding: 5px;
-}
-
-.middle-left-content-one button,
-.middle-left-content-two button {
-    background-color: white;
-    color: black;
-    height: 35px;
-    width: 150px;
-    border-radius: 5rem;
-    font-weight: bolder;
-    padding: 5px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-}*/
-
-/* bottom part of left content */
-
-/* .bottom-left-content-span-div {
-    margin: 25px;
-}
-
-.bottom-left-content-span-div ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.bottom-left-content-span-div ul li {
-    font-size: 10px;
-    color: #b3b3b3;
-}
-
-.bottom-left-content-span-div div span {
-    font-size: 12px;
-    text-align: left;
-}
-
-.Cookies {
-    margin: 20px 0 10px 0px;
-}
-
-.Cookies span {
-    font-size: 15px;
-    color: #c9c8c8;
-    font-weight: 200;
-}
-
-.english-btn button {
-    background: #121212;
-    color: #ffffff;
-    width: 6rem;
-    height: 2rem;
-    border: 1px solid #b3b3b3;
-    font-weight: bold;
-    border-radius: 5rem;
-
-    margin-top: 2rem;
-} */
-
 /* right part of the main content */
 .right-main {
     width: 73%;
@@ -635,6 +515,9 @@ main {
     color: white;
 }
 
+
+
+
 /* sign in button of footer */
 .sign-in {
     background-color: white;
@@ -648,18 +531,19 @@ main {
 
 .playbar {
     /* background-color: wheat; */
-    background: rgb(116, 115, 115);
+    background: rgb(79, 94, 71);
     min-height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: .5rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 
 }
 
@@ -670,14 +554,21 @@ main {
     gap: 20px
 }
 
+.player-button img  {
+    cursor: pointer;
+}
+
+#play{
+        height: 30px;
+}
 
 
 .seekbar {
-    height: 5px;
-    width: 99%;
+    height: 3px;
+    width: 90%;
     margin: auto;;
     border-radius: 10px;
-    background: black;
+    background: rgb(244, 241, 241);
 }
 
 .circle {
@@ -686,7 +577,7 @@ main {
     background-color: rgb(252, 252, 252);
     border-radius: 50%;
     position: absolute;
-    left: 0%;
+    left: 4%;
     bottom: 9px;
     transition: left 0.5s;
 }
@@ -695,4 +586,13 @@ main {
     background: none;
     outline: none;
     border: none;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    margin: 0  auto;
+    font-size: fff 18 px;
 }
