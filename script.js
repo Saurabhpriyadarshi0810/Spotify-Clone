@@ -56,14 +56,14 @@ async function getsongs() {
 const playmusic = (track, pause = false) => {
 
 
-    currentsong.src = "/songs/" + `${encodeURI(track)}`;
+    currentsong.src = "/songs/" + encodeURI(track);
     if (!pause) {
         currentsong.play();
         play.src = "./assets/pause.svg"
 
     }
 
-      document.querySelector(".song-info").innerHTML = track.replace(".mp3","");
+      document.querySelector(".song-info").innerHTML = track.replace("%20"," ").replace(".mp3"," ");
     document.querySelector(".song-time").innerHTML = "00:00 / 00:00";
 }
 
@@ -89,7 +89,7 @@ async function main() {
             ` <li>
                     <div class="music-logo">
                     <i class="fa-solid fa-music fa-xl" style="color: #f1f2f3;"></i>
-                    <h5>${(song.replace("%20",""))}</h5>
+                    <h5>${(song.replace("%20","  "))}</h5>
                     </div>
                     <div class="playnow">
                         <h5>Play Now</h5>
