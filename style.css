@@ -13,6 +13,7 @@
 
 body {
     background-color: #000000;
+    
    
 }
 
@@ -617,8 +618,10 @@ main {
 
     nav {
         flex-direction: column;
-        height: 12vh;
+        height: 15vh;
+        width: 99vw;
         align-items: center;
+        justify-content: center;
         width: 100%;
         padding: 10px;
         margin: 10px 0;
@@ -630,16 +633,18 @@ main {
 
    
     .right-nav {
-        padding-left: 10px;
+        padding-left: 20px;
         flex-wrap: wrap;
-        width: 80vw;
+        width: 100vw;
+        /* flex-shrink: .5; */
+        flex-direction: column;
     }
 
     #hamburger , #cut{
         display: block;
     }
     .right-nav ul{
-        gap : 15px
+        gap : 8px
     }
 
     .btn {
