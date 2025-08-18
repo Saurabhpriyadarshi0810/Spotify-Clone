@@ -63,7 +63,7 @@ const playmusic = (track, pause = false) => {
 
     }
 
-    document.querySelector(".song-info").innerHTML = track;
+      document.querySelector(".song-info").innerHTML = track.replace(".mp3","");
     document.querySelector(".song-time").innerHTML = "00:00 / 00:00";
 }
 
@@ -89,7 +89,7 @@ async function main() {
             ` <li>
                     <div class="music-logo">
                     <i class="fa-solid fa-music fa-xl" style="color: #f1f2f3;"></i>
-                    <h5>${decodeURIComponent(song)}</h5>
+                    <h5>${decodeURIComponent(song.replace(".mp3",""))}</h5>
                     </div>
                     <div class="playnow">
                         <h5>Play Now</h5>
@@ -102,7 +102,7 @@ async function main() {
     //adding intial music 
 
 
-    playmusic(songs[7], true)
+    playmusic(songs[2], true)
 
     // Adding event listener to each song 
 

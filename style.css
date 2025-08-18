@@ -13,6 +13,7 @@
 
 body {
     background-color: #000000;
+   
 }
 
 /* navigation Bar */
@@ -267,8 +268,9 @@ main {
 }
 
 .right {
-    height: 72vh;
-    overflow: auto;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #121212;
     border-radius: 1rem;
     color: white;
@@ -400,14 +402,7 @@ main {
     cursor: pointer;
 }
 
-/* .Popular-Artist-card-Container {
-    display: flex;
-    align-items: center;
-    height: 18.5rem;
-    width: 98%;
-    overflow-x: auto;
-    overflow-y: hidden;
-} */
+
 
 .Artist-card {
     height: 250px;
@@ -699,7 +694,7 @@ main {
 
 /* for tablet */
 
-@media(max-width:768px) {
+@media(min-width:485px) and(max-width:768px) {
     *{
         font-size: 18px;
     }
