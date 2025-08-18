@@ -89,7 +89,7 @@ async function main() {
             ` <li>
                     <div class="music-logo">
                     <i class="fa-solid fa-music fa-xl" style="color: #f1f2f3;"></i>
-                    <h5>${decodeURIComponent(song.replace(".mp3",""))}</h5>
+                    <h5>${(song.replace("%20",""))}</h5>
                     </div>
                     <div class="playnow">
                         <h5>Play Now</h5>
